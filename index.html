@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabGuy94</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="/logo.ico">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            background: black;
+            overflow-x: hidden;
+        }
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+
+        }
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        a {
+            font-size: 1.5rem;
+            color: white;
+        }
+        .blue {
+            background: #3c31dd;
+        }
+        .red {
+            background: #dd3f31;
+        }
+        .lblue {
+            background: #115ad8;
+        }
+        .purple {
+            background: #9826c9;
+        }
+        .purple {
+            background: black;
+        }
+        .curve {
+            position: absolute;
+            height: 250px;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+
+        .curve::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            transform: translate(85%, 60%);
+            background-color: black;
+        }
+        .curve::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #115ad8;
+            transform: translate(-4%, 40%);
+            z-index: -1;
+        }
+        .spacer {
+            aspect-ratio: 960/300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .layer1 {
+            background-image: url('./layer1.svg');
+        }
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(131% + 1.3px);
+            height: 388px;
+        }
+
+        .wave .shape-fill {
+            fill: #115AD8;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="lblue">
+        <div>
+            <h1 id="title"></h1>
+            <script>
+                var i = 0;
+                var txt = 'LabGuy94 🖥️';
+                var speed = 150;
+                
+                function typeWriter() {
+                  if (i < txt.length) {
+                    document.getElementById("title").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+                typeWriter()
+            </script>
+        </div>
+        <h2>Backend Programmer☑️</h2>
+    </section>
+    <section class='black'>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <h1>Who am I 🤔</h1>
+        <p>Hi, I'm LabGuy94 and I enjoy programming on the internet. The projects I like to work on are projects that automate things. I also enjoy playing video games as another way to keep me entertained. The languages I enjoy are JavaScript and Python. I can use various other languages(found on my github). My current projects are changing all the time as im trying to find the project I want to focus on.</p>
+    </section>
+    <div class="spacer layer1"></div>
+    <section class="lblue">
+        <h1>Contact Me / Socials🗣️</h1>
+        <p>Email: lab@bbox3.com 📧</p>
+        <p>Discord:</p>
+        <img src="https://discord.c99.nl/widget/theme-1/536606598660096040.png" alt="LabGuy94#6666">  
+        <p></p>
+        <a href="https://github.com/LabGuy94">Github💾</a>
+        <p></p>
+        <a href="https://steamcommunity.com/id/LabGuy94">Steam🎮</a>
+        <p></p>
+    </section>
+</body>
+</html>
